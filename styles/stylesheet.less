@@ -2,18 +2,22 @@
   font-family: "Playball";
   src: url(../fonts/Playball/Playball-Regular.ttf);
 }
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 html {
   /* Prevent horizontal scrolling */
   overflow-x: hidden;
 }
+
 html:focus-within {
   /* Enable smooth scrolling when focusing on elements with keyboard or script */
   scroll-behavior: smooth !important;
 }
+
 html,
 body {
   /* Remove default spacing and ensure full height for layout calculations */
@@ -22,65 +26,78 @@ body {
   height: 100%;
   background-color: #150403;
 }
-header nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
+
+header {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+  }
 }
+
 a {
   text-decoration: none;
+
+  #HeaderOne_H1 {
+    margin: 0;
+    padding: 15pt;
+    font-size: 5.5rem;
+    font-family: Playball;
+    cursor: pointer;
+    color: white;
+  }
 }
-a #HeaderOne_H1 {
-  margin: 0;
-  padding: 15pt;
-  font-size: 5.5rem;
-  font-family: Playball;
-  cursor: pointer;
-  color: white;
-}
+
 #HeaderTwo_H2-LoginButtons {
   display: flex;
   justify-content: flex-end;
   gap: 25px;
+
+  .ButtonH2 {
+    margin: 25px;
+    color: white;
+    background-color: #66070b;
+    padding: 15px;
+    width: 120px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .ButtonH2:hover {
+    background-color: white;
+    color: black;
+  }
 }
-#HeaderTwo_H2-LoginButtons .ButtonH2 {
-  margin: 25px;
-  color: white;
-  background-color: #66070b;
-  padding: 15px;
-  width: 120px;
-  border-radius: 50px;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-}
-#HeaderTwo_H2-LoginButtons .ButtonH2:hover {
-  background-color: white;
-  color: black;
-}
+
 #MythicaPageOne {
   display: flex;
   text-align: center;
   font-size: 3rem;
   color: white;
+  h3 {
+    position: relative;
+    top: 100px;
+  }
+
+  .H3-Cursive {
+    font-style: italic;
+    font-size: 4.5rem;
+  }
+
+  #MythicaPageOne-Image {
+    width: 15em;
+  }
 }
-#MythicaPageOne h3 {
-  position: relative;
-  top: 100px;
-}
-#MythicaPageOne .H3-Cursive {
-  font-style: italic;
-  font-size: 4.5rem;
-}
-#MythicaPageOne #MythicaPageOne-Image {
-  width: 15em;
-}
+
 main {
   min-height: calc(100dvh - 160px);
   padding: 1.3rem;
 }
+
 footer {
   width: 100%;
   height: auto;
@@ -90,16 +107,20 @@ footer {
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-footer .Flexbox {
-  display: flex;
-}
-footer #CurrentDate-div {
-  justify-content: start;
-}
-footer #UserStatus {
-  justify-content: center;
-}
-footer #CurrentTime-div {
-  justify-content: end;
+
+  .Flexbox {
+    display: flex;
+  }
+
+  #CurrentDate-div {
+    justify-content: start;
+  }
+
+  #UserStatus {
+    justify-content: center;
+  }
+
+  #CurrentTime-div {
+    justify-content: end;
+  }
 }
