@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <a href="./index.php">
+        <a href="../index.php">
             <h1 id="HeaderOne_H1">Mythica</h1>
         </a>
         <!-- Login and Register button -->
@@ -14,10 +14,10 @@
             </a>
 
 
-            <!-- Register Button -->
+            <!-- Overview Creatures -->
             <a href="#">
                 <h2 class="ButtonH2">
-                    Register
+                    Overzicht Wezens
                 </h2>
             </a>
 

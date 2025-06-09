@@ -50,7 +50,7 @@ a #HeaderOne_H1 {
   color: white;
   background-color: #66070b;
   padding: 15px;
-  width: 120px;
+  width: 150px;
   border-radius: 50px;
   font-size: 1rem;
   cursor: pointer;
@@ -59,23 +59,6 @@ a #HeaderOne_H1 {
 #HeaderTwo_H2-LoginButtons .ButtonH2:hover {
   background-color: white;
   color: black;
-}
-#MythicaPageOne {
-  display: flex;
-  text-align: center;
-  font-size: 3rem;
-  color: white;
-}
-#MythicaPageOne h3 {
-  position: relative;
-  top: 100px;
-}
-#MythicaPageOne .H3-Cursive {
-  font-style: italic;
-  font-size: 4.5rem;
-}
-#MythicaPageOne #MythicaPageOne-Image {
-  width: 15em;
 }
 main {
   min-height: calc(100dvh - 160px);
