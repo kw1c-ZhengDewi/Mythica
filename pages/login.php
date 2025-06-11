@@ -1,8 +1,13 @@
+<?php
+include "../database/connection.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <!-- 
-Auteur: Dewi
+Auteur: Dewi Hu
 Datum: 02-6-2025 
 Omschrijving: Praktijk Projectopdracht T04
 -->
@@ -11,8 +16,10 @@ Omschrijving: Praktijk Projectopdracht T04
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mythica</title>
-    <link rel="stylesheet" href="../styles/stylesheet.css">
-    <link rel="stylesheet" href="../styles/login.css">
+
+    <!-- todo: Leg straks uit wat de code in styles doen -->
+    <link rel="stylesheet" href="<?= dirname($_SERVER['PHP_SELF']) ?>/../styles/stylesheet.css">
+    <link rel="stylesheet" href="<?= dirname($_SERVER['PHP_SELF']) ?>/../styles/login.css">
 
 </head>
 
@@ -23,20 +30,21 @@ Omschrijving: Praktijk Projectopdracht T04
     ?>
 
     <main>
-
         <!-- Hier ga je inloggen, email addres en wachtwoord -->
-        <form action="./form-process.php" method="post">
-            <h2 id="h2-login-p">Welcome to Mythica!</h2>
+        <div id="form-div">
+            <h2 id="h2-login">Welcome to Mythica!</h2>
+            <form name="form" action="../database/connection.php" method="post">
+                <!-- Email adres invoeren -->
+                <label for="email">&ast;Email adress</label>
+                <input type="email" id="email" name="name" placeholder="type in your email"><br><br>
 
+                <!-- Wachtwoord invoeren -->
+                <label for="password">&ast;Password:</label>
+                <label for="pass"></label><input type="password" id="pass" name="pass" placeholder="type in your password"><br><br>
 
-            <label for="email">&ast;Email adress</label>
-            <input type="email" id="email" name="name" placeholder="email"><br><br>
-
-            <label for="password">&ast;Password:</label>
-            <input type="password" id="password" name="email" placeholder="password"><br><br>
-
-            <input type="submit" value="Log in">
-        </form>
+                <input type="submit" id="btn" value="Log in">
+            </form>
+        </div>
 
     </main>
 

@@ -1,14 +1,32 @@
-#h2-login-p,
-form {
+.ColorGuideLine {
   color: white;
 }
-#h2-login-p {
-  font-size: 5rem;
-}
-form {
-  background-color: #4b1215ca;
-  padding: 25px 50px 50px 50px;
-  border-radius: 25px;
-  text-align: center;
+#form-div {
+  background-color: rgba(74, 18, 21, 0.8);
+  color: white;
+  width: 800px;
   height: auto;
+  margin: 120px auto;
+  padding: 75px;
+  background-color: rgba(37, 9, 10, 0.8);
+  border-radius: 10px;
 }
+#form-div #h2-login {
+  font-size: 3.5rem;
+  text-align: center;
+}
+#btn {
+  color: white;
+  background-color: rgba(74, 18, 21, 0.8);
+  padding: 10px;
+  font-size: smaller;
+  border-radius: 10px;
+}
+@media screen and (max-width: 570px) {
+  #form-div {
+    width: 65%;
+    margin-left: 0;
+    padding: 40px;
+  }
+}
+/*# sourceMappingURL=login.css.map */

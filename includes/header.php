@@ -3,10 +3,10 @@
         <a href="../index.php">
             <h1 id="HeaderOne_H1">Mythica</h1>
         </a>
-        <!-- Login and Register button -->
+        <!-- Inlogknop en Overzicht met wezens knop -->
         <div id="HeaderTwo_H2-LoginButtons">
 
-            <!-- Login Button -->
+            <!-- Inloggen -->
             <a href="../pages/login.php">
                 <h2 class="ButtonH2">
                     Login
@@ -14,8 +14,8 @@
             </a>
 
 
-            <!-- Overview Creatures -->
-            <a href="#">
+            <!-- Overzicht met wezens -->
+            <a href="../pages/overzicht.php">
                 <h2 class="ButtonH2">
                     Overzicht Wezens
                 </h2>
