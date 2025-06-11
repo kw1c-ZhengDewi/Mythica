@@ -11,8 +11,10 @@ Omschrijving: Praktijk Projectopdracht T04
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mythica</title>
-    <link rel="stylesheet" href="../styles/stylesheet.css">
-    <link rel="stylesheet" href="../styles/overzicht.css">
+
+    <!-- todo: Leg straks uit wat de code in styles doen -->
+    <link rel="stylesheet" href="<?= dirname($_SERVER['PHP_SELF']) ?>/../styles/stylesheet.css">
+    <link rel="stylesheet" href="<?= dirname($_SERVER['PHP_SELF']) ?>/../styles/overzicht.css">
 
 </head>
 
