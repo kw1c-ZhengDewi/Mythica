@@ -18,7 +18,6 @@ Omschrijving: Praktijk Projectopdracht T04
     <!-- Leg straks uit wat de code in styles doen, even styles op pauze zetten -->
     <link rel="stylesheet" href="<?= dirname($_SERVER['PHP_SELF']) ?>../styles/stylesheet.css">
     <link rel="stylesheet" href="<?= dirname($_SERVER['PHP_SELF']) ?>../styles/login.css">
-
 </head>
 
 <body>
