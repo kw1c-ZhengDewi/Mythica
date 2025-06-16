@@ -1,8 +1,6 @@
 <?php
 include "../database/connectionLogin.php"
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +15,7 @@ Omschrijving: Praktijk Projectopdracht T04
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mythica</title>
 
-    <!-- todo: Leg straks uit wat de code in styles doen, even styles op pauze zetten -->
+    <!-- Leg straks uit wat de code in styles doen, even styles op pauze zetten -->
 <!--    <link rel="stylesheet" href="--><?php //= dirname($_SERVER['PHP_SELF']) ?><!--/../styles/stylesheet.css">-->
 <!--    <link rel="stylesheet" href="--><?php //= dirname($_SERVER['PHP_SELF']) ?><!--/../styles/login.css">-->
 
@@ -33,10 +31,10 @@ Omschrijving: Praktijk Projectopdracht T04
         <!-- Hier ga je inloggen, email addres en wachtwoord -->
         <div id="form-div">
             <h2 id="h2-login">Welcome to Mythica!</h2>
-            <form name="form" action="../database/connectionLogin.php" method="post">
+            <form name="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
                 <!-- Email adres invoeren -->
                 <label for="email">&ast;Email adress</label>
-                <input type="email" id="email" name="name" placeholder="type in your email"><br><br>
+                <input type="email" id="email" name="email" placeholder="type in your email"><br><br>
 
                 <!-- Wachtwoord invoeren -->
                 <label for="password">&ast;Password:</label>
@@ -53,5 +51,4 @@ Omschrijving: Praktijk Projectopdracht T04
     ?>
 
 </body>
-
 </html>

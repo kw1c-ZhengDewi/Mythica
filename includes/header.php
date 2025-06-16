@@ -14,6 +14,14 @@
             </a>
 
 
+            <!-- Registreren -->
+            <a href="../pages/register.php">
+                <h2 class="ButtonH2">
+                    Register
+                </h2>
+            </a>
+
+
             <!-- Overzicht met wezens -->
             <a href="../pages/overzicht.php">
                 <h2 class="ButtonH2">
