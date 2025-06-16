@@ -1,3 +1,8 @@
+<?php
+global $SESSION;
+session_start();  // Always first, before any output!
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,5 +47,9 @@ Omschrijving: Praktijk Projectopdracht T04
     include "./includes/footer.php" // Dit is de footer, daarin staat op de huidige datum en wanneer de gebruiker is ingelogd 
     ?>
 </body>
-
 </html>
+<!-- Sessions -->
+<?php
+echo $SESSION["email"] . "<br>";
+echo $SESSION["password"] . "<br>";
+?>

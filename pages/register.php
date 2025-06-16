@@ -39,7 +39,7 @@ include "../database/connectionRegister.php";
                 <label for="password">&ast;Password:</label>
                 <label for="pass"></label><input type="password" id="pass" name="pass" placeholder="type in your password" required><br><br>
 
-                <input type="submit" id="btn" value="Log in">
+                <input type="submit" id="btn" value="register">
             </form>
         </div>
 

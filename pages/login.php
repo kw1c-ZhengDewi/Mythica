@@ -1,9 +1,9 @@
 <?php
-include "../database/connectionLogin.php"
+session_start();  // Always first, before any output!
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <!-- 
 Auteur: Dewi Hu
 Datum: 02-6-2025 
@@ -16,9 +16,8 @@ Omschrijving: Praktijk Projectopdracht T04
     <title>Mythica</title>
 
     <!-- Leg straks uit wat de code in styles doen, even styles op pauze zetten -->
-<!--    <link rel="stylesheet" href="--><?php //= dirname($_SERVER['PHP_SELF']) ?><!--/../styles/stylesheet.css">-->
-<!--    <link rel="stylesheet" href="--><?php //= dirname($_SERVER['PHP_SELF']) ?><!--/../styles/login.css">-->
-
+    <link rel="stylesheet" href="<?= dirname($_SERVER['PHP_SELF']) ?>../styles/stylesheet.css">
+    <link rel="stylesheet" href="<?= dirname($_SERVER['PHP_SELF']) ?>../styles/login.css">
 </head>
 
 <body>
@@ -31,9 +30,12 @@ Omschrijving: Praktijk Projectopdracht T04
         <!-- Hier ga je inloggen, email addres en wachtwoord -->
         <div id="form-div">
             <h2 id="h2-login">Welcome to Mythica!</h2>
-            <form name="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+
+
+            <!--  Inloggen? -> Gaat naar de home pagina, want het wordt niet direct gestuurd naar de bewerk/overzicht pagina -->
+            <form name="form" action="../index.php" method="post">
                 <!-- Email adres invoeren -->
-                <label for="email">&ast;Email adress</label>
+                <label for="email">&ast;Email adres</label>
                 <input type="email" id="email" name="email" placeholder="type in your email"><br><br>
 
                 <!-- Wachtwoord invoeren -->
@@ -52,3 +54,12 @@ Omschrijving: Praktijk Projectopdracht T04
 
 </body>
 </html>
+
+<?php
+$SESSION["email"] = "Brocode";
+$SESSION["password"] = "123";
+
+// Testing
+echo $SESSION["email"] . "<br>";
+echo $SESSION["password"] . "<br>";
+?>
