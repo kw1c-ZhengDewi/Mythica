@@ -1,0 +1,31 @@
+.ColorGuideLine {
+  color: white;
+}
+#form-div {
+  background-color: rgba(74, 18, 21, 0.8);
+  color: white;
+  width: 800px;
+  height: auto;
+  margin: 120px auto;
+  padding: 75px;
+  border-radius: 10px;
+}
+#form-div #h2-login {
+  font-size: 3.5rem;
+  text-align: center;
+}
+#btn {
+  color: white;
+  background-color: rgba(74, 18, 21, 0.8);
+  padding: 10px;
+  font-size: smaller;
+  border-radius: 10px;
+}
+@media screen and (max-width: 570px) {
+  #form-div {
+    width: 65%;
+    margin-left: 0;
+    padding: 40px;
+  }
+}
+/*# sourceMappingURL=login.css.map */

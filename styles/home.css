@@ -1,0 +1,17 @@
+#MythicaPageOne {
+  display: flex;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+#MythicaPageOne h3 {
+  position: relative;
+  top: 100px;
+}
+#MythicaPageOne .H3-Cursive {
+  font-style: italic;
+  font-size: 4.5rem;
+}
+#MythicaPageOne #MythicaPageOne-Image {
+  width: 15em;
+}
